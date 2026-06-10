@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connecting</title>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #111827;
+        color: white;
+        font-family: Arial, sans-serif;
+        flex-direction: column;
+    }
+
+    .loader {
+        width: 50px;
+        height: 50px;
+        border: 5px solid #374151;
+        border-top: 5px solid #3b82f6;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+        100% { transform: rotate(360deg); }
+    }
+
+    h2 {
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+    <div class="loader"></div>
+    <h2>Connecting...</h2>
+    <p>Please wait while we establish a connection.</p>
+
+    <script>
+        // Example redirect after connection
+        setTimeout(() => {
+            window.location.href = "home.html";
+        }, 3000);
+    </script>
+</body>
+</html>
